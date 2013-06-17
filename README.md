@@ -22,4 +22,5 @@ cd <your-project>
 mvn archetype:generate -DarchetypeCatalog=local  
 
 choose your Business Application Server archetype where x stands for your local archetype identifier
+
 x: local -> org.openinfinity:open-infinity-bas-archetype (open-infinity-parent-archetype)

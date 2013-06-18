@@ -1,0 +1,16 @@
+../.metadata/
+../Servers/
+.project
+.settings/
+entity/.classpath
+entity/.project
+entity/.settings/	
+mvc/.classpath
+mvc/.project
+mvc/.settings/
+repository/.classpath
+repository/.project
+repository/.settings
+service/.classpath
+service/.project
+service/.settings/

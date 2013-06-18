@@ -19,7 +19,7 @@
 
 	<mongo:repositories base-package="${package}.domain.${artifactId}" />
 
-	<mongo:db-factory host="${openinfinity.mongo.host}" port="${openinfinity.mongo.port}" dbname="${openinfinity.mongo.db.name}" />	
+	<mongo:db-factory host="${symbol_dollar}{openinfinity.mongo.host}" port="${symbol_dollar}{openinfinity.mongo.port}" dbname="${symbol_dollar}{openinfinity.mongo.db.name}" />
 
 	<beans:bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
 	  <beans:constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
@@ -27,5 +27,3 @@
 	 
 	
 </beans:beans>
-
-

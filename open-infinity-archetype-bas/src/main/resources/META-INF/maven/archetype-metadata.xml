@@ -3,52 +3,22 @@
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <fileSets>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>facade</directory>
+    <fileSet encoding="UTF-8">
+      <directory>.settings</directory>
       <includes>
-        <include>**/*.xml</include>
+        <include>**/*.prefs</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
-      <directory>domain/src</directory>
+      <directory></directory>
       <includes>
-        <include>**/*.xml</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>domain</directory>
-      <includes>
-        <include>**/*.xml</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>facade/src</directory>
-      <includes>
-        <include>**/*.java</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>domain/WEB-INF</directory>
-      <includes>
-        <include>**/*.xml</include>
+        <include>.project</include>
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8">
-      <directory>domain/META-INF</directory>
+      <directory></directory>
       <includes>
-        <include>**/*.MF</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>domain/src</directory>
-      <includes>
-        <include>**/*.MF</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>domain/WEB-INF</directory>
-      <includes>
-        <include>**/*.jar</include>
+        <include>.gitignore</include>
       </includes>
     </fileSet>
   </fileSets>
@@ -91,6 +61,12 @@
             <include>**/*.gif</include>
           </includes>
         </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
         <fileSet encoding="UTF-8">
           <directory>resources</directory>
           <includes>
@@ -115,6 +91,23 @@
           <directory>resources/adapters</directory>
           <includes>
             <include>**/*.js</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+            <include>**/*.component</include>
+            <include>**/*.container</include>
+            <include>**/*.name</include>
+            <include>**/*.jsdtscope</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
           </includes>
         </fileSet>
       </fileSets>
@@ -144,6 +137,26 @@
           <directory>src/main/resources</directory>
           <includes>
             <include>**/*.dtd</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+            <include>**/*.component</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
           </includes>
         </fileSet>
       </fileSets>
@@ -187,6 +200,26 @@
             <include>**/*.sql</include>
           </includes>
         </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+            <include>**/*.component</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
       </fileSets>
     </module>
     <module id="entity" dir="entity" name="entity">
@@ -213,6 +246,26 @@
           <directory>src/test/java</directory>
           <includes>
             <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+            <include>**/*.component</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
           </includes>
         </fileSet>
       </fileSets>

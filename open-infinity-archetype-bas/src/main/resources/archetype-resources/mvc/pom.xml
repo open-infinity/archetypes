@@ -12,9 +12,6 @@
 	<packaging>war</packaging>
 	<properties>
 		<slf4j.version>1.6.4</slf4j.version>
-		<bas1.host>10.33.208.118</bas1.host>
-		<sp.keyfile>/Users/leinpilk/Downloads/instance720.key</sp.keyfile>
-		<bas.deployDir>/opt/openinfinity/2.0.0/tomcat/webapps</bas.deployDir>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -122,36 +119,6 @@
 				<configuration>
 					<warName>shoppinglist</warName>
 				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-						<id>deploy-war</id>
-						<phase>install</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<target>
-						<scp localFile="${project.build.directory}/shoppinglist.war" remoteTodir="root@${bas1.host}:${bas.deployDir}" trust="true" keyfile="${sp.keyfile}" />
-					</target>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>com.jcraft</groupId>
-						<artifactId>jsch</artifactId>
-						<version>0.1.42</version>
-					</dependency>
-					<dependency>
-						<groupId>org.apache.ant</groupId>
-						<artifactId>ant-jsch</artifactId>
-						<version>1.8.2</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
